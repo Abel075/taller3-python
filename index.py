@@ -2,7 +2,7 @@ from flask import Flask
 from flask import render_template #metodo para retornar la plantilla en template
 #from flask_sqlalchemy import SQLAlchemy  #Libreria de base de datos
 
-import os
+# import os
 
 #dbdir = "sqlite:///" +os.path.abspath(os.gtwcwd()) + "/database.db"
 
