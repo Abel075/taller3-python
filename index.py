@@ -41,6 +41,9 @@ def mi_cuenta():
 def ayuda():
     return render_template('ayuda.html')
 
+@app.route('/acceso')
+def acceso():
+    return render_template('acceso.html')
 
 #Archivo que arranca la aplicacion
 if __name__ == '__main__':
