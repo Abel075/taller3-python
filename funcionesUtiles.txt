@@ -1,0 +1,28 @@
+
+//validacion de usuario
+@app.route("/user/<string:user>")
+def user(user):
+    return "Hola " + user
+
+//validacion de enteros
+@app.route("/numero/<int:n>")
+def numero(n):
+    return "Numero: {}".format(n)
+
+//identificacion por ID y username
+@app.route("/user/<int:id>/<string:username>")
+def username(id,username):
+    return "ID: {}, Nombre de usuario: {}".format(id,username)
+
+//Definir una ruta default y una autentificada
+@app.route("/default/")
+@app.route("/default/<string:dft>")
+def dft(dft):
+    return "El valor de dft es: " + dft
+
+//Agregar contenid al layout
+{% block content %}
+    {% endblock %}
+
+ //En cada ruta agregar
+ {% extends %}

@@ -11,9 +11,11 @@ def home():
 
 @app.route('/about')
 def about():
-    return 'About'
+    return render_template('about.html')
+
+
 
 
 #Archivo que arranca la aplicacion
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
